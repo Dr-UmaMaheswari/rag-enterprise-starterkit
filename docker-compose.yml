@@ -1,0 +1,8 @@
+services:
+  rag:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - RAG_ENV=local
+      - RAG_DATA_DIR=/app/samples/documents
